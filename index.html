@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Automatización Hotelera | Más Reservas</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="topbar">
+        <span class="brand">HotelFlow AI</span>
+        <a class="btn btn-whatsapp" href="https://wa.me/34999999999?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20hotelera" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+      </nav>
+
+      <div class="hero-content">
+        <div class="hero-copy">
+          <p class="eyebrow">Automatización inteligente para hoteles</p>
+          <h1>Convierte más visitas en reservas directas, 24/7</h1>
+          <p>
+            Responde en segundos, reduce tareas manuales y mejora la experiencia de tus huéspedes con un sistema de automatización diseñado para hoteles.
+          </p>
+          <a class="btn btn-primary" href="#contacto">Quiero aumentar mis reservas</a>
+        </div>
+
+        <section id="contacto" class="contact-card" aria-label="Formulario de contacto">
+          <h2>Solicita una demo gratuita</h2>
+          <form id="leadForm" novalidate>
+            <label for="nombre">Nombre</label>
+            <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
+
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000" required />
+
+            <label for="hotel">Hotel</label>
+            <input id="hotel" name="hotel" type="text" placeholder="Nombre del hotel" required />
+
+            <button type="submit" class="btn btn-primary">Enviar solicitud</button>
+            <p id="formMessage" class="form-message" aria-live="polite"></p>
+          </form>
+        </section>
+      </div>
+    </header>
+
+    <main>
+      <section class="benefits" aria-label="Beneficios del servicio">
+        <h2>Beneficios que impactan tu ocupación</h2>
+        <div class="benefit-grid">
+          <article class="benefit-item">
+            <h3>Más reservas directas</h3>
+            <p>Automatiza seguimientos y recupera oportunidades perdidas sin depender de OTAs.</p>
+          </article>
+          <article class="benefit-item">
+            <h3>Atención inmediata</h3>
+            <p>Respuestas automáticas por web y WhatsApp para convertir interés en confirmaciones.</p>
+          </article>
+          <article class="benefit-item">
+            <h3>Operación eficiente</h3>
+            <p>Reduce carga operativa en recepción y dedica más tiempo a la experiencia del huésped.</p>
+          </article>
+          <article class="benefit-item">
+            <h3>Decisiones con datos</h3>
+            <p>Visualiza métricas clave para optimizar campañas y aumentar el RevPAR.</p>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
