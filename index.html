@@ -16,7 +16,13 @@
     <header class="hero">
       <nav class="topbar">
         <span class="brand">HotelFlow AI</span>
-        <a class="btn btn-whatsapp" href="https://wa.me/34999999999?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20hotelera" target="_blank" rel="noopener noreferrer">WhatsApp</a>
+        <a
+          class="btn btn-whatsapp"
+          href="https://wa.me/34999999999?text=Hola%2C%20quiero%20m%C3%A1s%20informaci%C3%B3n%20sobre%20automatizaci%C3%B3n%20hotelera"
+          target="_blank"
+          rel="noopener noreferrer"
+          >WhatsApp</a
+        >
       </nav>
 
       <div class="hero-content">
@@ -24,7 +30,8 @@
           <p class="eyebrow">Automatización inteligente para hoteles</p>
           <h1>Convierte más visitas en reservas directas, 24/7</h1>
           <p>
-            Responde en segundos, reduce tareas manuales y mejora la experiencia de tus huéspedes con un sistema de automatización diseñado para hoteles.
+            Responde en segundos, reduce tareas manuales y mejora la experiencia de tus huéspedes
+            con un sistema de automatización diseñado para hoteles.
           </p>
           <a class="btn btn-primary" href="#contacto">Quiero aumentar mis reservas</a>
         </div>
@@ -36,7 +43,13 @@
             <input id="nombre" name="nombre" type="text" placeholder="Tu nombre" required />
 
             <label for="telefono">Teléfono</label>
-            <input id="telefono" name="telefono" type="tel" placeholder="+34 600 000 000" required />
+            <input
+              id="telefono"
+              name="telefono"
+              type="tel"
+              placeholder="+34 600 000 000"
+              required
+            />
 
             <label for="hotel">Hotel</label>
             <input id="hotel" name="hotel" type="text" placeholder="Nombre del hotel" required />
@@ -68,6 +81,41 @@
             <h3>Decisiones con datos</h3>
             <p>Visualiza métricas clave para optimizar campañas y aumentar el RevPAR.</p>
           </article>
+        </div>
+      </section>
+
+      <section class="chatbot-flow" aria-label="Flujo de chatbot hotelero">
+        <h2>Flujo tipo ManyChat para reservas hoteleras</h2>
+        <p class="chatbot-intro">
+          Este flujo conversacional guía al huésped desde el saludo automático hasta la captura de
+          datos para cerrar la reserva.
+        </p>
+
+        <div class="flow-grid">
+          <ol class="flow-steps">
+            <li><strong>Saludo automático:</strong> “¡Hola! Bienvenido a HotelFlow. ¿Te ayudo con tu reserva?”</li>
+            <li><strong>Fechas:</strong> Solicita fecha de check-in y check-out.</li>
+            <li><strong>Personas:</strong> Pide número de huéspedes.</li>
+            <li><strong>Disponibilidad simulada:</strong> Muestra habitación sugerida con precio aproximado.</li>
+            <li><strong>Captura de datos:</strong> Solicita nombre, email y teléfono para confirmar.</li>
+            <li><strong>Cierre:</strong> Confirma que un asesor finaliza la reserva por WhatsApp o llamada.</li>
+          </ol>
+
+          <div class="chat-simulator" aria-live="polite">
+            <div class="chat-header">Simulador Conversacional</div>
+            <div id="chatMessages" class="chat-messages"></div>
+            <form id="chatbotForm" class="chat-input-area">
+              <input
+                id="chatInput"
+                type="text"
+                placeholder="Escribe tu respuesta..."
+                autocomplete="off"
+                required
+              />
+              <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            <button id="restartChat" class="btn btn-secondary" type="button">Reiniciar flujo</button>
+          </div>
         </div>
       </section>
     </main>
